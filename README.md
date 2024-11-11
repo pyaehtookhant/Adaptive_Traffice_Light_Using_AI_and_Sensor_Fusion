@@ -2,9 +2,8 @@
  Final team proj of RAI. year 1 semester 2 
 
  - PROJECT: adaptive traficlight system using sensor fusion
- - this project is perfrom as a demo 
-
-
+ - this project is perform as a demo
+ - YouTube: https://www.youtube.com/watch?v=ZtQ_4fc5rgs
 
 ## Authors
 
@@ -16,11 +15,7 @@
 
 To run this project, you will need to add the following libaries in `requirement.txt` to your Environment file
 
-
 ## Feedback
-
-If you have any feedback, please reach out to us at fake@fake.com
-
 
 ## Run on local
 
