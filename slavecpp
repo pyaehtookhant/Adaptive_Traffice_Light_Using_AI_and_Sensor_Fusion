@@ -1,0 +1,60 @@
+//slave code for traffic light
+#include <Arduino.h>
+#include <time.h>
+#include <Wire.h>
+#include <ESP8266WiFi.h>
+#include <PubSubClient.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <Arduinojson.h>
+#include <FirebaseArduino.h>
+
+
+//wifi
+const char* ssid = "SSID"; //wifi name
+const char* password = "PASSWORD"; //wifi password
+
+//firebase
+#define firebase_url "../firebase_url"
+#define firebase_api_key "../firebase_api_key"
+
+
+
+//first traffic light
+#define ledPin 13 //red led pin
+#define ledPin1 12 //green led pin
+#define ledPin2 11 //blue led pin
+
+
+//second traffic light
+#define ledPin3 10 //red led pin
+#define ledPin4 14 //green led pin
+#define ledPin5 15 //blue led pin
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT); //red led pin
+  pinMode(ledPin1, OUTPUT); //green led pin
+  pinMode(ledPin2, OUTPUT); //blue led pin
+  pinMode(ledPin3, OUTPUT); //red led pin
+  pinMode(ledPin4, OUTPUT); //green led pin
+  pinMode(ledPin5, OUTPUT); //blue led pin
+
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.println("Connecting to WiFi..");
+  }
+  Serial.println("Connected to the WiFi network");
+
+  //firebase
+  Firebase.begin(firebase_url, firebase_api_key);
+}
+
+void DB_connect(){
+  
+}
+
+void loop(){
+
+}
