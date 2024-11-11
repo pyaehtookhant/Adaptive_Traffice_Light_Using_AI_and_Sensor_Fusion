@@ -1,1 +1,3 @@
-# Adaptive_Traffice_Light_Using_AI_and_Sensor_Fusion
+# Adaptive Traffic Light Using AI and Sensor Fusion
+
+YouTube: https://www.youtube.com/watch?v=ZtQ_4fc5rgs
